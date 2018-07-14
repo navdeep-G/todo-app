@@ -1,1 +1,1 @@
-### A Simple TODO Application built on Vue, Vuex, & Typescript
+### A simple TODO application built on Vue, Vuex, & Typescript
