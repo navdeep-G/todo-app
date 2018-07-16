@@ -1,0 +1,35 @@
+{
+  "name": "todo",
+  "version": "0.0.1",
+  "dependencies": {
+    "stylus": "^0.54.5",
+    "ts-loader": "^4.1.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.8.1",
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.2.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-template-loader": "^0.4.1",
+    "vuetype": "^0.3.2",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.0"
+  },
+  "description": "A simple TODO application built on Vue, Vuex, & Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && stylus src/styles -o dist/styles.css && webpack",
+    "watch-vue": "webpack-dev-server --open",
+    "watch-styles": "mkdir dist && stylus -w src/styles -o dist/styles.css",
+    "start": "npm-run-all --parallel watch-vue watch-styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Navdeep Gill",
+  "license": "MIT",
+  "devDependencies": {
+    "launch-editor-middleware": "^2.2.1",
+    "npm-run-all": "^4.1.2",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
